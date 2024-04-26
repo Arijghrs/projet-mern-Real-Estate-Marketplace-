@@ -1,5 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import userRouter from './routes/user.js';
+
+dotenv.config();
+
 
 
 
@@ -19,6 +24,9 @@ const connect = async () => {
     mongoose.connection.on("connected", ()=>{
       console.log("mongoDB connected")
     })
+
+
+    app.use("/api/user", userRouter);
 
 
 app.listen(3000, () =>{
