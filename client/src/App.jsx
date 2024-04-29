@@ -20,7 +20,7 @@ export default function App() {
       <Route path='/sign-up' element={<SignUp />} />
       <Route path='/about' element={<About />} />
       <Route path='/profile' element={<Profile />} />
-      <Route path='/signin' element={<SignIn />} />
+      <Route path='/SignIn' element={<SignIn />} />
      </Routes>
     </BrowserRouter>
   )
