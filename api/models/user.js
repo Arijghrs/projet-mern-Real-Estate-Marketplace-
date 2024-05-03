@@ -17,6 +17,10 @@ const userSchema = new mongoose.Schema({
         required: true,
         
     },
+    avatar:{
+        type: String,
+        default: "https://img.freepik.com/vecteurs-libre/homme-affaires-caractere-avatar-isole_24877-60111.jpg"
+    },
 }, {timestamps:true});
 
 const User = mongoose.model('User', userSchema);
